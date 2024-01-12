@@ -44,9 +44,11 @@ void ps2_mouse_init(void) {
 
     wait_ms(PS2_MOUSE_INIT_DELAY); // wait for powering up
 
-    PS2_MOUSE_SEND(PS2_MOUSE_RESET, "ps2_mouse_init: sending reset");
+//    PS2_MOUSE_SEND(PS2_MOUSE_RESET, "ps2_mouse_init: sending reset");
 
     PS2_MOUSE_RECEIVE("ps2_mouse_init: read BAT");
+
+    PS2_MOUSE_SEND(PS2_MOUSE_GET_DEVICE_ID, "ps2_mouse_init: get DevID");
     PS2_MOUSE_RECEIVE("ps2_mouse_init: read DevID");
 
 #ifdef PS2_MOUSE_USE_REMOTE_MODE
