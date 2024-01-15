@@ -17,6 +17,10 @@
         "rows": ["B10", "B1", "B0", "A7", "A6", "A5", "A4", "A3"]
     },
 
+    "features": {
+        "extrakey": true
+    },
+
     "diode_direction": "COL2ROW",
 
     "layouts":{
