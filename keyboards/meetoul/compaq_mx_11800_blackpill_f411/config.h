@@ -19,4 +19,8 @@
 //#define PS2_MOUSE_INVERT_BUTTONS
 
 // Define Scroll button (this is the button after invert)
-#define PS2_MOUSE_SCROLL_BTN_MASK (1 << PS2_MOUSE_BTN_RIGHT)
+#define PS2_MOUSE_SCROLL_BTN_MASK (1 << PS2_MOUSE_BTN_LEFT)
+
+#define LED_SCROLL_LOCK_PIN A2
+#define LED_CAPS_LOCK_PIN   A1
+#define LED_NUM_LOCK_PIN    A0
